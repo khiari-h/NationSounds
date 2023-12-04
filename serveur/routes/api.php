@@ -14,7 +14,7 @@ use App\Http\Controllers\UtilisateurController;
 use App\Http\Controllers\Authentification;
 use App\Http\Controllers\GeolocationController;
 
-
+//Routes CRUD modèle Eloquent Laravel
 Route::resources([
     'alertes' => AlerteController::class,
     'commentaires' => CommentaireController::class,
@@ -29,8 +29,13 @@ Route::resources([
     
 ]);
 
+//Routes Wordpress
+Route::prefix('wordpress')->group(function () {
+    Route::get('/posts', 'WordPressController@getPosts');
+});
 
 
+//Route Middleware
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
