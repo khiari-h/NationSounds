@@ -15,7 +15,6 @@ const Header = () => {
       <nav className="header-nav">
         <Link to="/programme">Programmation</Link>
         <Link to="/artistes">Artistes</Link>
-        <Link to="/billets">Billetterie</Link>
         <Link to="/infos">Infos Pratiques</Link>
       </nav>
       <div className="header-actions">

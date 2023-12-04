@@ -14,10 +14,10 @@ const HomePage = () => {
             <WelcomeSection />
             <AboutSection />
             <EventListSection />
-            <ContactSection />
-            <PartnerSection />
-            <LocationSection />
             <NewsSection />
+            <PartnerSection />
+            <ContactSection />
+            <LocationSection />
         </div>
     );
 };
